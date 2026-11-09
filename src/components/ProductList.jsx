@@ -3,7 +3,7 @@ import ProductCard from './ProductCard';
 
 const ProductList = ({ products, onRemove }) => {
   return (
-    <div>
+    <div id="product-list">
       {products.length === 0 ? (
         <p>No products found.</p>
       ) : (

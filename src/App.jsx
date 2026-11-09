@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Product Dashboard</h1>
+      <h1 id="header">Product Dashboard</h1>
       <div>
         <button type="button" onClick={() => setAvailabilityFilter('all')}>
           All Products
@@ -38,7 +38,10 @@ const App = () => {
           Out of Stock
         </button>
       </div>
-      <ProductList products={filteredProducts} onRemove={removeProduct} />
+      <ProductList
+        products={filteredProducts}
+        onRemove={removeProduct}
+      />
     </div>
   );
 };
